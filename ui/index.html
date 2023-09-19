@@ -1,0 +1,111 @@
+<html>
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+<style>
+   .cyrks {display: none;}
+   .penny {display: none;}
+   .devil_laugh {display: none;}
+   .dying {display: none;}
+   .laugh {display: none;}
+   .see {display: none;}
+   .jump {display: none;}
+   .final {display: none;}
+</style>
+
+</head>
+<body>
+
+<div class="cyrks">
+  <img src="https://i.ytimg.com/vi/dW9C7eB8W4w/maxresdefault.jpg">
+</div>
+<div class="penny">
+  <img src="https://i.imgur.com/tpj6NZ6.jpg">
+</div>
+<div class="devil_laugh">
+  <img src="https://c4.wallpaperflare.com/wallpaper/878/271/631/creepy-dark-evil-horror-wallpaper-preview.jpg">
+</div>
+<div class="dying">
+  <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701035615.jpg">
+</div>
+<div class="laugh">
+  <img src="https://64.media.tumblr.com/11b8363d5f154a9f858f086f5f2efd0b/tumblr_psgcqzXnla1xq2d9io1_1280.jpg">
+</div>
+<div class="see">
+  <img src="https://c4.wallpaperflare.com/wallpaper/1019/545/246/creepy-dark-evil-horror-wallpaper-preview.jpg">
+</div>
+<div class="jump">
+  <img src="https://camo.githubusercontent.com/2e0dd7a5cdc62e8987d18156acd5daa0c4209fafee5e5677ff9a2f8c64a8cdb3/68747470733a2f2f692e7974696d672e636f6d2f76692f524e6f48635745387462512f6d617872657364656661756c742e6a7067">
+</div>
+
+<div class="final">
+  <img src="https://helios-i.mashable.com/imagery/articles/01X96QZb6qdUC4LC086YeDF/hero-image.fill.size_1248x702.v1623372403.jpg">
+</div>
+
+
+
+</body>
+</html>
+
+<style>
+body {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0px;
+  overflow: hidden;
+}
+
+img {
+  height: 1080px;
+  width: 1920px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<script type="text/javascript">
+	
+	
+	$(function() {
+		/* open the UI for user */
+		window.addEventListener('message', function(event) {
+		   
+      if (event.data.type == "playSound") {
+        var sound = new Audio('sound/'+event.data.name+'.ogg');
+        sound.volume = 1.0;
+        sound.play();
+      };
+
+			if (event.data.type == "cyrks"){
+        $('.cyrks').css('display', 'block')
+      } else if (event.data.type == "penny"){
+        $('.penny').css('display', 'block')
+      } else if (event.data.type == "devil_laugh"){
+        $('.devil_laugh').css('display', 'block')
+      } else if (event.data.type == "dying"){
+        $('.dying').css('display', 'block')
+      } else if (event.data.type == "laugh"){
+        $('.laugh').css('display', 'block')
+      } else if (event.data.type == "see"){
+        $('.see').css('display', 'block')
+      } else if (event.data.type == "jump"){
+        $('.jump').css('display', 'block')
+      } else if (event.data.type == "final"){
+        $('.final').css('display', 'block')
+			} else if (event.data.type == "closeAll"){
+        $('.cyrks').css('display', 'none')
+        $('.penny').css('display', 'none')
+        $('.devil_laugh').css('display', 'none')
+        $('.dying').css('display', 'none')
+        $('.laugh').css('display', 'none')
+        $('.see').css('display', 'none')
+        $('.jump').css('display', 'none')
+        $('.final').css('display', 'none')
+			} 
+		});
+	});
+	
+
+	</script>
+	
