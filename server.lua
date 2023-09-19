@@ -119,16 +119,6 @@ AddEventHandler('coachHalloween:requestCoords', function()
     end
 end)
 
-RegisterCommand('list', function()
-    print(json.encode(pumpkins, {indent=true}))
-end, false)
-
-RegisterCommand('removeall', function()
-    for k, v in pairs(pumpkins) do
-        DeleteEntity(v.object)
-    end
-end, false)
-
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() == resourceName then
         for k, v in pairs(pumpkins) do
