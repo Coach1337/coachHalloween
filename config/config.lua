@@ -1,5 +1,5 @@
 Config = {}
-Config.Debug = true -- Set to true if you want to see debug messages
+Config.Debug = false -- Set to true if you want to see debug messages
 Config.VersionCheck = true -- Set to false if you don't want console notifications when update is available
 Config.Webhook = "" -- Discord webhook for logs, leave empty if you don't want to send logs
 
