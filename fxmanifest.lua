@@ -15,6 +15,7 @@ client_scripts {
 }
 
 server_scripts {
+    'config/webhook.lua',
     'config/coords.lua',
     'server.lua'
 }
