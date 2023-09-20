@@ -243,15 +243,15 @@ function createPumpkinClient(netId)
 
                                 for x = 0, loopAmount do
                                     UseParticleFxAssetNextCall(particleDictionary)
-                                    local particle = StartParticleFxLoopedOnEntity(particleName, data.entity, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0, false, false, false)
+                                    local particle = StartParticleFxLoopedOnEntity(particleName, data, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0, false, false, false)
                                     table.insert(particleEffects, 1, particle)
                                     UseParticleFxAssetNextCall(particleDictionary2)
-                                    local particle2 = StartParticleFxLoopedOnEntity(particleName2, data.entity, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0, false, false, false)
+                                    local particle2 = StartParticleFxLoopedOnEntity(particleName2, data, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.0, false, false, false)
                                     table.insert(particleEffects, 1, particle2)
                                     Citizen.Wait(0)
                                 end
                             end
-                            TriggerServerEvent("coachHalloween:losowanie", data.netId)
+                            TriggerServerEvent("coachHalloween:losowanie", netId)
                             PlaySoundFrontend(-1, "CHECKPOINT_PERFECT", "HUD_MINI_GAME_SOUNDSET", 0)
                         end
                     },
