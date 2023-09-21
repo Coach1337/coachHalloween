@@ -324,7 +324,7 @@ AddEventHandler('coachHalloween:spawnObject', function(model, coords)
                         end
                         TriggerServerEvent("coachHalloween:losowanie")
                         PlaySoundFrontend(-1, "CHECKPOINT_PERFECT", "HUD_MINI_GAME_SOUNDSET", 0)
-                        rem(ent)
+                        rem(data.entity)
                         DeleteEntity(data.entity)
                     end
                 }
@@ -372,7 +372,7 @@ AddEventHandler('coachHalloween:spawnObject', function(model, coords)
                             end
                             TriggerServerEvent("coachHalloween:losowanie")
                             PlaySoundFrontend(-1, "CHECKPOINT_PERFECT", "HUD_MINI_GAME_SOUNDSET", 0)
-                            rem(ent)
+                            rem(data)
                             DeleteEntity(data)
                         end
                     },
