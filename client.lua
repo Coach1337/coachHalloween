@@ -385,7 +385,7 @@ end)
 
 function rem(ent)
     for k, v in pairs(pumpkins) do
-        if v.entity == ent then
+        if v.object == ent then
             table.remove(pumpkins, k)
         end
     end
