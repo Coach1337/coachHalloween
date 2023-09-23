@@ -197,7 +197,7 @@ function debugprint(...)
 end
 
 function logtodc(message)
-    if Config.DiscordWebhook ~= "" then
+    if Config.Webhook ~= "" then
         local n = {
             {
                 ["color"] = 9803263,
@@ -208,7 +208,7 @@ function logtodc(message)
                 }
             }
         }
-        PerformHttpRequest(Config.DiscordWebhook, function(f, o, h) end, 'POST', json.encode({username="coachHalloween", embeds=n}), {['Content-Type']='application/json'})
+        PerformHttpRequest(Config.Webhook, function(f, o, h) end, 'POST', json.encode({username="coachHalloween", embeds=n}), {['Content-Type']='application/json'})
     end
 end
 
