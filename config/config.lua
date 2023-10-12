@@ -56,7 +56,7 @@ Config.SpawnPumpkinsImmediately = true -- If set to true, first pumpkin will spa
 Config.FirstPumpkinWaitTime = 15 -- (in minutes) If Config.SpawnPumpkinsImmediately is set to false then first pumpkin will spawn after this time
 Config.TimeBetweenSpawns = 0.1 -- (in minutes) Time between spawning pumpkins
 
-Config.SyncPumpkins = true -- If set to true all players on server will have common synced pumpkins, if set to false then every player will have their own pumpkins
+Config.SyncPumpkins = false -- If set to true all players on server will have common synced pumpkins, if set to false then every player will have their own pumpkins
 Config.MaxPumpkins = 20 -- Max pumpkins on map
 
 Config.EnableFireParticles = true -- If set to true fire particles will spawn on pumpkin making it more visible from distance
